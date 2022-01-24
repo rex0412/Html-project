@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">  
+        <title>layout</title>
+
+        <style>
+            /* 전체 태그에 스타일 주는 방법 */
+            * {
+                border: 1px solid;
+            }
+
+            aside {
+                float: left;
+            }
+
+            main {
+                float: left;
+            }
+
+            footer {
+                clear: left;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--총 너비 : 1200px, 총 높이 : 820px-->
+        <div>
+            <!--너비 : 1200px, 높이 : 120px-->
+        <header style="width: 1200px; height: 120px;"></header>
+
+        <!--사이드 영역 너비 : 300px, 높이 : 600px-->
+        <aside style="width: 300px; height: 600px;"></aside>
+
+        <!--메인 영역 너비 : 900px, 높이 : 600px-->
+        <main style="width: 900px; height: 600px;"></main>
+
+        <!--푸터 영역 너비 : 1200px, 높이 : 100px-->
+        <footer style="width: 1200px; height: 100px;"></footer>
+        </div>
+    </body>
+</html>
