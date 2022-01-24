@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>가상 클래스</title>
+
+        <style>
+            ul {
+                list-style-type: none;
+            }
+
+            ul li {
+                display: inline-block;
+                margin: 0 20px;
+                padding: 20px;
+            }
+
+            a {
+                border: 1px solid red;
+                padding: 20px;
+            }
+
+            /* 방문하지 않은 링크 */
+            a:link {
+                background-color: cornflowerblue;
+                text-decoration: none;
+                color: white;
+            }
+
+            a:visited {
+                background-color: aquamarine;
+                text-decoration: underline;
+                color: black;
+            }
+
+            /* 마우스 포인터를 올렸을 때 */
+            a:hover {
+                text-decoration: line-through;
+            }
+
+            /* 마우스를 클릭했을 때 */
+            a:active {
+                color: red;
+                font-weight: bold;
+            }
+
+            /* focus 이동 */
+            a:focus {
+                text-decoration: overline;
+            }
+        </style>
+    </head>
+
+    <body>
+        <ul>
+            <li><a href="#1" class="menu1">메뉴1</a></li>
+            <li><a href="#2" class="menu2">메뉴2</a></li>
+            <li><a href="#3" class="menu3">메뉴3</a></li>
+            <li><a href="#4" class="menu4">메뉴4</a></li>
+        </ul>
+    </body>
+</html>
