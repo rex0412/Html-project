@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>가상 요소</title>
+
+    <!-- 내부 스타일 시트 -->
+    <style>
+
+        #containar {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        #navi {
+            position: sticky;
+            top: 15px;
+
+        }  
+
+        #navi ul {
+             list-style-type: none;
+             text-align: center;
+             padding: 0px;
+             word-wrap: normal;
+             background-color: lightgreen;
+        }
+
+        #navi ul li {
+            display: inline-block;
+            margin:0 100px;
+            padding: 15px;
+        }
+       
+        a {
+            padding: 10px;
+        }
+       
+        a:link {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: red;
+            text-decoration: underline;
+        }
+
+        section:target {
+            border: 3px solid red;
+        }
+
+        section {
+            padding: 15px;
+        }
+       
+        #s1, #s3 {
+            background-color: lightblue;
+        }
+
+        #s2 {
+            background-color: ivory;
+        }
+   
+    </style>
+
+    </head>
+    
+    <body>
+   
+    <div id="containar">
+       
+        <!-- 제목 -->
+        <header id="header">
+            <h3>상일미디어고등학교</h3>
+        </header>
+
+        <!-- nav, 메뉴 -->
+
+        <nav id="navi">
+            <ul>
+                <li><a href="#s1">숭조</a></li>
+                <li><a href="#s2">예의</a></li>
+                <li><a href="#s3">질서</a></li>
+            </ul>
+        </nav>
+
+        <!-- 본문 -->
+        <main id="contents">
+            <!-- 숭조 section-->
+            <section id="s1">
+               
+                <h4>숭조 : 숭조정신의 함양 </h4>
+               
+                <p>조상을 숭상하고 부모님께 효성을 다하는 마음과 실천을
+                    통해 자아의 정체성을 확립하고
+                    전통적인 윤리사상을 계승하는 인간관을 확립한다.
+                </p>
+            </section>
+
+            <section id="s2">
+                <h4>예의 : 예절 바른 생활의 습관화</h4>
+               
+                <p>동방예의지국의 민족으로 긍지와 자부심을 가지고 전통문화의
+                    올바른 계승 발전과 미풍양속을 심화 시켜 떳떳한 한민족으로서의 존엄성을 갖게 한다.
+                </p>
+            </section>
+
+            <section id="s3">
+                <h4>질서 : 질서의식의 고취</h4>
+                <p>기본생활의 습관화로 질서의식을 고취하여 가정, 학교, 국가
+                    사회생활이 안전되고 규범을 준수하고 아름답고 평안한
+                    복지사회를 건설할 인재를 양성한다.
+                </p>
+            </section>
+        </main>
+
+        <hr>
+
+        <!-- footer -->
+        <footer id="footer">
+            <p>
+                        [05282] 서울 강동구 천호대로 219길 61(상일동, 상일미디어고등학교)  
+                <br>    대표전화) 02-428-0732
+                <br>    팩스) 02-3427-0733
+            </p>
+        </footer>
+        </div>
+    </body>
+</html>
