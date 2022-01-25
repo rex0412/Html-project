@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>가상 클래스</title>
+
+        <style>
+            #text:disabled {
+                background-color: lightgreen;
+            }
+
+            #text:enabled {
+                background-color: lightyellow;
+            }
+
+            input:checked + label {
+                color: red;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form action="">
+            <textarea  id="text" cols="30" rows="10" disabled>
+                입력 불가능
+            </textarea>
+
+            <textarea id="text" cols="30" rows="10">
+
+            </textarea>
+
+            <br>
+
+            <input type="radio" name="group" value="1" id="r1" checked>
+            <label for="r1">옵션1</label>
+
+            <input type="radio" name="group" value="2" id="r2">
+            <label for="r2">옵션2</label>
+        </form>
+    </body>
+</html>
